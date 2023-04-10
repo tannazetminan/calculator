@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<h1>My Calculator</h1>
+	</header>
+
+	<section>
+		<form id="myForm">
+			<fieldset>
+				<legend>Input</legend>
+				<label for="operand1">Operand 1:</label>
+				<input type="text" id="operand1" name="operand1" placeholder="Enter operand 1" required><br>
+
+				<label for="operand2">Operand 2:</label>
+				<input type="text" id="operand2" name="operand2" placeholder="Enter operand 2" required><br>
+			</fieldset>
+
+			<fieldset>
+				<legend>Output</legend>
+				<textarea id="output" name="output" rows="5" placeholder="Result" readonly></textarea><br>
+
+				<button type="button" id="addBtn" onclick="add()">Add</button>
+                <button type="button" id="subtractionBtn" onclick="subtraction()">Subtraction</button>
+				<button type="button" id="multiplyBtn" onclick="multiply()">Multiply</button>
+				<button type="button" id="divideBtn" onclick="divide()">Divide</button>
+				<button type="reset">Clear</button>
+			</fieldset>
+		</form>
+	</section>
+
+	<footer>
+		<p>&copy; 2023 Tannaz Etminan</p>
+	</footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
